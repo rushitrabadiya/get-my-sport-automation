@@ -3,9 +3,7 @@ def build_prompt(content):
     You are an expert Instagram content creator and caption strategist.
     Based on the provided {content}, generate a high-performing Instagram post package including:
         1. A catchy caption: Write an engaging, scroll-stopping caption that fits the tone and theme of the provided content. Use storytelling, emojis, and a clear call to action (CTA) if appropriate.
-        
         2. Relevant hashtags: Provide a list of 10-15 hashtags that are optimized for engagement and reach. Mix broad, niche, and branded hashtags related to the topic.
-        
         3. A detailed image generation prompt: Create a creative, descriptive prompt for AI image generation that visually represents the post.
 
     Image prompt guidelines: 

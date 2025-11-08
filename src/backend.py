@@ -53,13 +53,14 @@ def generate_image(image_prompt: str, image_index: int):
         raise Exception(f"Error generating image: {response.status_code}")
 
 
-def save_to_excel(caption: str, image_path: str):
+def save_to_excel(caption: str, hashtags: list, image_path: str):
     """
     Appends generated caption & image info to an Excel sheet.
     """
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     new_data = pd.DataFrame([{
         "caption": caption,
+        "hashtags": " ".join(hashtags),
         "image_path": image_path,
         "created_at": now
     }])

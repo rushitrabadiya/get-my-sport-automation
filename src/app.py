@@ -63,7 +63,8 @@ if st.button("🚀 Generate", width='stretch'):
             st.error(str(e))
             st.stop()
 
-    st.image(image_path, caption=image_prompt, width='stretch')
+    st.image(image_path, width='stretch')
+    # st.image(image_path, caption=image_prompt, width='stretch')
 
     # Download Image
     with open(image_path, "rb") as f:
@@ -87,7 +88,7 @@ if st.button("🚀 Generate", width='stretch'):
     )
 
     # Save Data
-    save_to_excel(caption, image_path)
+    save_to_excel(caption, hashtags, image_path)
     # st.info(f"✅ Data saved to `{EXCEL_FILE}`")
 
 
